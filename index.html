@@ -1,135 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vagif Safarli - Resume</title>
 
-  <title>Vagif Safarli - Portfolio</title>
+  <!-- Bootstrap + Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <style>
+    body { padding-top: 70px; }
+    .section-title { font-size: 24px; font-weight: 600; margin-top: 40px; }
+    img { max-width: 100%; height: auto; display:block; margin: 10px 0; }
+  </style>
 </head>
 
-<body>
+<body class="container">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex justify-content-between align-items-center">
-    <div class="container d-flex justify-content-between align-items-center">
+  <!-- Navigation -->
+  <nav class="fixed-top bg-white shadow-sm p-3">
+    <a href="#home" class="mx-2">Home</a>
+    <a href="#about" class="mx-2">About</a>
+    <a href="#resume" class="mx-2">Resume</a>
+    <a href="#portfolio" class="mx-2">Portfolio</a>
+    <a href="#contact" class="mx-2">Contact</a>
+  </nav>
 
-      <div class="logo">
-        <h1><a href="#hero">Vagif Safarli</a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Vagif Safarli</h1>
-      <p>I’m a Computer Engineering Student</p>
-    </div>
+  <!-- HOME -->
+  <section id="home">
+    <h1>Vagif Safarli</h1>
+    <p>I’m a Computer Engineering Student</p>
   </section>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="section-title">
-        <h2>About Me</h2>
-        <p>I am a Computer Engineering student at Vilnius Gediminas Technical University. I have a strong interest in web technologies, programming, and modern software solutions. My goal is to continue developing my skills in computer science, front-end development, and engineering foundations. I am motivated, curious, and always open to new challenges and creative projects. During my studies, I am gaining experience in teamwork, problem-solving, and tools such as HTML, CSS, JavaScript, and GitHub. I believe technology has a strong power to connect and inspire people, and I want to become a professional who contributes to future innovations.</p>
-      </div>
-    </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I am a Computer Engineering student at Vilnius Gediminas Technical University. I have a strong interest in web technologies, programming, and modern software solutions...</p>
   </section>
 
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-      <div class="section-title">
-        <h2>Resume</h2>
-      </div>
+  <!-- RESUME -->
+  <section id="resume">
+    <h2 class="section-title">Resume</h2>
 
-      <h3 class="resume-title">Education</h3>
-      <div class="resume-item">
-        <h4>Bachelor in Computer Engineering</h4>
-        <h5>2024 – Present</h5>
-        <p><em>Vilnius Gediminas Technical University</em></p>
-      </div>
+    <h5>Education</h5>
+    <p><strong>Bachelor in Computer Engineering</strong><br>2024 – Present<br>Vilnius Gediminas Technical University</p>
 
-      <h3 class="resume-title">Skills</h3>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Git & GitHub, VS Code</li>
-        <li>Teamwork & Communication</li>
-        <li>Problem-solving Skills</li>
-      </ul>
-
-    </div>
+    <h5>Skills</h5>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Git & GitHub, VS Code</li>
+      <li>Teamwork & Problem-solving</li>
+    </ul>
   </section>
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio section-bg">
-    <div class="container">
-      <div class="section-title">
-        <h2>Portfolio</h2>
-      </div>
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
 
-      <div class="row portfolio-container">
+    <h5>University Life</h5>
+    <p>My study environment at VGTU where I began my engineering journey.</p>
+    <img src="assets/img/uni.jpg" alt="University Life">
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="assets/img/uni.jpg" class="img-fluid" alt="University">
-          <div class="portfolio-info">
-            <h4>University Life</h4>
-            <p>My study environment at VGTU where I began my engineering journey.</p>
-          </div>
-        </div>
+    <h5>Programming Workspace</h5>
+    <p>Working on programming projects and university assignments.</p>
+    <img src="assets/img/setup.jpg" alt="Programming Workspace">
 
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="assets/img/setup.jpg" class="img-fluid" alt="Programming Setup">
-          <div class="portfolio-info">
-            <h4>Programming Workspace</h4>
-            <p>Working on programming projects and university assignments.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <img src="assets/img/study.jpg" class="img-fluid" alt="Computer Engineering">
-          <div class="portfolio-info">
-            <h4>Computer Engineering Practice</h4>
-            <p>Developing coding skills in university laboratory sessions.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    <h5>Computer Engineering Practice</h5>
+    <p>Developing coding skills in university laboratory sessions.</p>
+    <img src="assets/img/study.jpg" alt="Computer Engineering">
   </section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: vaqifsafarli@gmail.com</p>
+  </section>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
